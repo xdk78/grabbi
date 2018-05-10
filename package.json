@@ -1,0 +1,47 @@
+{
+  "name": "grabbi",
+  "version": "0.0.10",
+  "description": "grabbi a simple web scraper/crawler",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "lint:fix": "eslint  --fix --ext .js --ignore-path .gitignore .",
+    "test": "jest --forceExit --verbose"
+  },
+  "keywords": [
+    "grabbi",
+    "scraper",
+    "html",
+    "crawler"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xdk78/grabbi.git"
+  },
+  "author": "xdk78",
+  "homepage": "https://github.com/xdk78/grabbi",
+  "bugs": "https://github.com/xdk78/grabbi/issues",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "jsdom": "^11.10.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "node"
+    ]
+  }
+}
