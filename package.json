@@ -1,6 +1,6 @@
 {
   "name": "grabbi",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "grabbi a simple web scraper/crawler",
   "main": "src/index.js",
   "scripts": {
