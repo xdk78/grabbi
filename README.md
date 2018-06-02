@@ -10,9 +10,9 @@ grabbi using JSDOM and axios under hood provide simple but powerful way for scra
 ```js
 const grabbi = require('grabbi')
 
-grabbi('https://www.github.com').then(({ res, raw }) => {
-  console.log(res.title)
-  console.log(res.querySelector('p[class="alt-lead mb-4"]').textContent)
+grabbi('https://www.github.com').then(({ doc, res }) => {
+  console.log(doc.title)
+  console.log(doc.getElementsByClassName('alt-lead mb-4')[0].textContent)
 }).catch(err => console.log(err))
 ```
 
@@ -27,8 +27,8 @@ const config = {
   headers: { 'X-Custom-Header': 'foobar' }
 }
 
-grabbi('https://en.wikipedia.org/wiki/Main_Page', config).then(({ res, raw }) => {
-  console.log(res.title)
-  console.log(res.querySelector('div[id="articlecount"]').textContent)
+grabbi('https://en.wikipedia.org/wiki/Main_Page', config).then(({ doc, res }) => {
+  console.log(doc.title)
+  console.log(doc.querySelector('div[id="articlecount"]').textContent)
 }).catch(err => console.log(err))
 ```
