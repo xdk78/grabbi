@@ -7,7 +7,7 @@ const config = {
   headers: { 'X-Custom-Header': 'foobar' }
 }
 
-grabbi('https://en.wikipedia.org/wiki/Main_Page', config).then(({doc, res}) => {
+grabbi('https://en.wikipedia.org/wiki/Main_Page', config).then(({ doc, res }) => {
   console.log(doc.title)
   console.log(doc.querySelector('div[id="articlecount"]').textContent)
 }).catch(err => console.log(err))

@@ -4,7 +4,7 @@ const url = 'https://example.com/'
 
 describe('GET page content', () => {
   it('should respond with title', async () => {
-    const {doc, res} = await grabbi(url)
+    const { doc, res } = await grabbi(url)
 
     expect(res).not.toBeNull()
     expect(res).not.toBeUndefined()
@@ -12,7 +12,7 @@ describe('GET page content', () => {
   })
 
   it('should respond with h1', async () => {
-    const {doc, res} = await grabbi(url)
+    const { doc, res } = await grabbi(url)
 
     expect(res).not.toBeNull()
     expect(res).not.toBeUndefined()
