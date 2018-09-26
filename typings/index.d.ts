@@ -1,3 +1,3 @@
-import { AxiosRequestConfig, AxiosResponse } from 'axios'
-export declare type Grabbi = (url: string, opts?: AxiosRequestConfig) => Promise<{ doc: HTMLDocument, res: AxiosResponse }>
-export default Grabbi
+import { AxiosRequestConfig, AxiosResponse } from 'axios';
+declare type grabbi = (url: string, opts?: AxiosRequestConfig) => Promise<{ doc: HTMLDocument, res: AxiosResponse }>;
+export default grabbi;
