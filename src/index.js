@@ -16,7 +16,7 @@ async function grabbi (url, opts = { method: 'get' }) {
       res: response.data
     }
   } catch (err) {
-    throw new Error(`Can not scrap this: ${err.message}`)
+    throw err
   }
 }
 
