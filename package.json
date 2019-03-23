@@ -3,7 +3,7 @@
   "version": "0.1.3",
   "description": "grabbi a simple web scraper/crawler",
   "main": "src/index.js",
-  "typings": "typings/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "lint:fix": "eslint  --fix --ext .js --ignore-path .gitignore .",
@@ -13,7 +13,8 @@
     "grabbi",
     "scraper",
     "html",
-    "crawler"
+    "crawler",
+    "dom"
   ],
   "repository": {
     "type": "git",
@@ -25,14 +26,14 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
-    "jsdom": "^12.0.0"
+    "jsdom": "^14.0.0"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
-    "eslint": "^5.6.0",
+    "jest": "^24.5.0",
+    "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0"
   },
